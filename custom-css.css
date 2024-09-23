@@ -1,0 +1,9 @@
+::-webkit-scrollbar
+{
+    display: none;
+}
+
+.gradient {
+    background: rgb(16,29,121);
+    background: radial-gradient(circle, rgba(16,29,121,1) 6%, rgba(24,0,113,1) 14%, rgba(0,0,0,1) 100%);
+}
