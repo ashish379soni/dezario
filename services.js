@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Remove active styles from all tabs
       document.querySelectorAll('.service-tab').forEach(tab => {
-        tab.classList.remove('text-purple-800', 'border-current');
+        tab.classList.remove('text-purple-600', 'border-current');
         tab.classList.add('text-slate-900', 'border-transparent', 'hover:border-slate-300');
       });
 
       // Add active styles to the clicked tab
       this.classList.remove('text-slate-900', 'border-transparent', 'hover:border-slate-300');
-      this.classList.add('text-purple-800', 'border-current');
+      this.classList.add('text-purple-600', 'border-current');
 
       // Fetch the content file from the data-content attribute
       const contentFile = this.getAttribute('data-content');

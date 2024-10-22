@@ -30,7 +30,7 @@ const text = document.querySelectorAll('.text');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.remove('opacity-0', 'translate-y-40');  // Show card
+      entry.target.classList.remove('opacity-0', 'translate-y-20');  // Show card
       entry.target.classList.add('opacity-100', 'translate-y-0');   // Trigger the animation
       observer.unobserve(entry.target);  // Stop observing after the animation is triggered
     }
