@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dezario Infotech | Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="services-custom-css.css">
+  <link rel="stylesheet" href="about-custom-css.css">
 </head>
 <body>
   <div class="relative overflow-hidden h-[100vh]">
@@ -15,55 +16,87 @@
           </div>
           <div class="w-[50%] text-xl font-light">
               <ul class="md:flex justify-evenly hidden">
-                <li class="border-b-2 border-cyan-400"><a href="#">Services</a></li>
+                <li><a href="./services.html">Services</a></li>
                 <!-- <li><a href="#">Our Blog</a></li> -->
                 <li><a href="./contact-us.html">Contact</a></li>
-                <li><a href="./about.html">About</a></li>
+                <li class="border-b-2 border-cyan-400"><a href="#">About</a></li>
               </ul>
           </div>
           <div class="text-xl md:hidden cursor-pointer" id="hamburger">&#9776;</div>
       </nav>
       <div id="sidemenu" class="fixed top-0 left-0 w-[100vw] h-[100vh] bg-slate-950 bg-opacity-90 z-50 transform -translate-x-full duration-300 text-white">
         <ul class="flex flex-col items-center justify-center h-full space-y-8 text-2xl">
-          <li class="border-b-2 border-cyan-400"><a href="#">Services</a></li>
+          <li><a href="./services.html">Services</a></li>
           <!-- <li><a href="#">Our Blog</a></li> -->
           <li><a href="./contact-us.html">Contact</a></li>
-          <li><a href="./about.html">About</a></li>
+          <li class="border-b-2 border-cyan-400"><a href="#">About</a></li>
         </ul>
         <!-- Close Button -->
         <div class="absolute top-5 right-5 text-3xl cursor-pointer" id="closeMenu">&times;</div>
     </div>
       <div class="relative z-10 top-[35%] sm:top-[30%] opacity-0 translate-y-40 duration-1000 transition ease-in-out text" id="company">
-          <h1 class="text-5xl sm:text-7xl md:text-8xl font-medium text-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text tracking-widest text-animation">OUR SERVICES</h1>
+          <h1 class="text-5xl sm:text-7xl md:text-8xl font-medium text-center bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 text-transparent bg-clip-text tracking-widest text-animation">ABOUT US</h1>
           <h3 class="text-lg sm:text-2xl md:text:3xl text-center font-light text-white mt-4 tracking-wider">DEZARIO INFOTECH</h3>
       </div>
-      <div class="absolute w-full h-full bg-center bg-cover top-0 left-0 bg-[url('./images/bg_services.jpg')] will-change-transform" id="parallax-bg"></div>
+      <div class="absolute w-full h-full bg-center bg-cover top-0 left-0 bg-[url('./images/bg.jpg')] will-change-transform" id="parallax-bg"></div>
   </div>
 
-  <div class="w-full bg-white rounded-3xl md:p-10 p-5">
-    <div class="flex overflow-auto mb-6 -mx-4 sm:-mx-6">
-      <div class="flex-none min-w-full px-4 sm:px-6">
-        <ul class="border-b border-slate-200 space-x-9 flex whitespace-nowrap dark:border-slate-200/5 mb-px">
-          <li>
-            <h2><a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-purple-600 border-current" href="#" data-content="./docs/services/graphic-designing.html">Graphic Designing</a></h2>
-          </li>
-          <li>
-            <h2><a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700" href="#" data-content="./docs/services/motion-graphic-designing.html">Motion Graphic Designing</a></h2>
-          </li>
-          <li>
-            <h2><a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700" href="#" data-content="./docs/services/development.html">Development</a></h2>
-          </li>
-          <li>
-            <h2><a class="service-tab flex text-sm leading-6 font-semibold pt-3 pb-2.5 border-b-2 -mb-px text-slate-900 border-transparent hover:border-slate-300 dark:text-slate-200 dark:hover:border-slate-700" href="#" data-content="./docs/services/social-media-management.html">Social Media Management</a></h2>
-          </li>
-        </ul>
+  <section class="bg-gradient-to-b from-blue-100 to-gray-100">
+    <div class="py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Our Expertise</h2>
+            <p class="text-gray-600 mb-8">At Dezario Infotech, we aim to build long-lasting relationships with our clients, helping them achieve their digital goals and succeed in their respective industries.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-center mb-4">
+                      <i class="fa-solid fa-truck fa-3x" style="color: #023792;"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">On-time Delivery</h3>
+                    <p class="text-gray-600">Applying a delivery-driven approach to avoid latency.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-center mb-4">
+                      <i class="fa-solid fa-medal fa-3x" style="color: #023792;"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">Exceptional Quality</h3>
+                    <p class="text-gray-600">Team of expert freelancers, specialized in their fields, working extra time for higher earnings and producing the best of their strengths.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-center mb-4">
+                      <i class="fa-solid fa-people-group fa-3x" style="color: #023792;"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">Trust and Teamwork</h3>
+                    <p class="text-gray-600">High performance in collaborative deliverables.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-center mb-4">
+                      <i class="fa-solid fa-hand-holding-dollar fa-3x" style="color: #023792;"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-blue-800 mb-2">Reasonable Prices</h3>
+                    <p class="text-gray-600">Planning, creating, and using modern methods to expedite production and delivery.</p>
+                </div>
+            </div>
+        </div>
       </div>
-    </div>
-    <div id="content-area" class="pb-8">
-      <!-- tab content - services displayed   -->
-    </div>
-  </div>
-
+      <div class="pb-12">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col items-center">
+                <!-- Image with circular style -->
+                <img src="./images/about/yashimage.png" alt="Founder Image" class="w-48 h-48 rounded-full shadow-lg mb-6 object-cover">
+                <h2 class="text-3xl font-bold text-blue-800 mb-1">Meet The Founder</h2>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Yash Sharma</h3>
+                <p class="text-sm text-gray-600 italic mb-4">A Visionary. An Innovator. A Leader.</p>
+                <p class="max-w-xl text-gray-600">
+                    Yash Sharma founded Dezario Infotech with a bold vision – to merge creativity and technology and create something extraordinary. And now, Yash has turned that vision into a reality. Yash has always believed in innovation. He’s built Dezario Infotech into a company where creativity and technology come together to create something remarkable.
+                </p>
+            </div>
+        </div>
+      </div>
+  </section>
   <!-- footer -->
   <footer class="bg-gray-900 text-gray-300 py-8 text-center sm:text-left">
     <div class="container mx-auto px-4">
@@ -118,6 +151,6 @@
         </div>
     </div>
   </footer>
-  <script src="./services.js"></script>
+  <script src="./about.js"></script>
 </body>
 </html>
