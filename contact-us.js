@@ -46,3 +46,58 @@ form.forEach(form => {
 text.forEach(text => {
     observer.observe(text);
   });
+
+//for scrolling of client section
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,       // Number of logos visible at once
+    spaceBetween: 30,       // Space between logos
+    loop: true,             // Infinite loop
+    autoplay: {
+      delay: 2000,          // Delay between transitions (in ms)
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+    },
+  });
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Collect form data
+  var templateParams = {
+      name: document.getElementById('name').value,
+      tel: document.getElementById('tel').value,
+      email: document.getElementById('email').value,
+      identity: document.getElementById('identity').value,
+      message: document.getElementById('message').value
+  };
+
+  emailjs.sendForm('service_seelimsii', 'template_4a7y0u9', this)
+      .then(function() {
+          alert('Email sent successfully!');
+      }, function(error) {
+          alert('Failed to send email. Error: ' + JSON.stringify(error));
+      });
+});
